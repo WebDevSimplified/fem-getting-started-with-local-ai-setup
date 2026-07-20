@@ -1,0 +1,26 @@
+{
+  "author": {
+    "name": "Kyle Cook",
+    "company": "Web Dev Simplified"
+  },
+  "title": "Getting Started With Local AI Setup",
+  "subtitle": "Build the Ultimate Local AI Workflow",
+  "frontendMastersLink": "",
+  "social": {
+    "github": "WebDevSimplified",
+    "twitter": "DevSimplified"
+  },
+  "description": "Build and configure local agentic environments. Learn the skills needed to analyze, set up, and run local AI models along with how to optimize these models for your hardware to create fast and inexpensive AI-powered tools.",
+  "keywords": [
+    "Local AI",
+    "Agentic Coding",
+    "How AI Works",
+    "AI Models",
+    "AI Configuration",
+    "AI Optimization",
+    "Web Dev Simplified",
+    "Frontend Masters"
+  ],
+  "productionBaseUrl": "/fem-getting-started-with-local-ai-setup",
+  "csvPath": "./out/lessons.csv"
+}

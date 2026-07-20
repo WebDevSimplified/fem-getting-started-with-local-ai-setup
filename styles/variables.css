@@ -1,0 +1,83 @@
+@import "github-dark.css";
+@import "github.css";
+
+:root {
+  --primary: oklch(0.97284 0.02702 156.039);
+  --secondary: oklch(0.9565 0.1228 156.039);
+  --highlight: oklch(0.5065 0.1228 156.039);
+
+  --lesson-text: rgb(8, 8, 8);
+
+  --text-header: var(--primary);
+  --text-main-headers: var(--highlight);
+  --text-links: oklch(0.7137 0.1434 254.624);
+  --text-footer: var(--highlight);
+
+  --bg-main: white;
+  --bg-dots: var(--highlight);
+  --bg-lesson: white;
+
+  --nav-buttons: var(--highlight);
+  --nav-buttons-text: white;
+  --nav-buttons-text-hover: white;
+
+  --corner-active: var(--highlight);
+  --corner-inactive: #f4f4f4;
+  --icons: var(--highlight);
+  --footer-icons: var(--highlight);
+
+  --emphasized-bg: oklch(0.985 0.005 156.039);
+  --emphasized-border: oklch(0.80284 0.02702 156.039);
+
+  --code-bg: var(--emphasized-bg);
+  --code-border: var(--emphasized-border);
+  --code-text: oklch(from var(--lesson-text) calc(l + 0.25) c h);
+}
+
+[data-theme="dark"] {
+  --primary: oklch(0.2 0.03 156.039);
+  --secondary: oklch(0.1 0.3 156.039);
+  --highlight: oklch(0.5065 0.1228 156.039);
+
+  --text-header: var(--primary);
+  --text-main-headers: var(--highlight);
+  --text-links: oklch(0.7137 0.1434 254.624);
+  --text-footer: var(--highlight);
+
+  --lesson-text: oklch(0.85 0.01 0);
+
+  --bg-main: oklch(0.12 0.005 156.039);
+  --bg-dots: var(--highlight);
+  --bg-lesson: oklch(0.18 0.01 156.039);
+  --nav-buttons: var(--highlight);
+  --nav-buttons-text: oklch(0.08 0.02 156.039);
+  --nav-buttons-text-hover: var(--primary);
+
+  --corner-active: var(--highlight);
+  --corner-inactive: oklch(0.2 0.005 156.039);
+  --icons: var(--highlight);
+  --footer-icons: var(--highlight);
+
+  --emphasized-bg: oklch(0.2 0.05 156.039);
+  --emphasized-border: oklch(0.35 0.08 156.039);
+
+  --code-bg: #0d1117;
+  --code-border: var(--emphasized-border);
+  --code-text: oklch(from var(--lesson-text) calc(l - 0.2) c h);
+}
+
+.lesson-title {
+  color: var(--highlight);
+}
+
+.lesson-section-title {
+  color: var(--primary);
+}
+
+.terms {
+  color: var(--highlight);
+}
+
+li {
+  /* color: var(--highlight); */
+}

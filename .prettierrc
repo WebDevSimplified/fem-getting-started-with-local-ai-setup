@@ -1,0 +1,4 @@
+{
+  "semi": false,
+  "prettier.arrowParens": "avoid"
+}
