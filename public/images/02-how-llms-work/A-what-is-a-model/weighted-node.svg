@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" role="img"
+  aria-labelledby="title description">
+  <title id="title">Weighted neural-network node</title>
+  <desc id="description">Three input values, each multiplied by a learned weight, feed into a node
+    that produces an output.</desc>
+  <style>
+    text { font-family: Arial, sans-serif; fill: #172033; }
+    .label { font-size: 21px; font-weight: 700; }
+    .sub { font-size: 18px; fill: #526071; }
+    .line { stroke: #718096; stroke-width: 4; }
+  </style>
+  <rect width="960" height="420" fill="#f6f8fb" />
+  <text x="95" y="65" class="label">Input values</text>
+  <text x="350" y="65" class="label">Learned weights</text>
+  <text x="640" y="65" class="label">Node</text>
+  <line class="line" x1="205" y1="130" x2="620" y2="190" />
+  <line class="line" x1="205" y1="210" x2="620" y2="210" />
+  <line class="line" x1="205" y1="290" x2="620" y2="230" />
+  <circle cx="170" cy="130" r="34" fill="#e0e7ff" stroke="#172033" stroke-width="3" />
+  <circle cx="170" cy="210" r="34" fill="#e0e7ff" stroke="#172033" stroke-width="3" />
+  <circle cx="170" cy="290" r="34" fill="#e0e7ff" stroke="#172033" stroke-width="3" />
+  <text x="151" y="138" class="label">100</text>
+  <text x="151" y="218" class="label">255</text>
+  <text x="151" y="298" class="label">156</text>
+  <rect x="380" y="140" width="105" height="40" rx="4" fill="#fff" stroke="#172033" stroke-width="2" />
+  <rect x="380" y="190" width="105" height="40" rx="4" fill="#fff" stroke="#172033" stroke-width="2" />
+  <rect x="380" y="240" width="105" height="40" rx="4" fill="#fff" stroke="#172033" stroke-width="2" />
+  <text x="401" y="167" class="sub">w1 = 0.4</text>
+  <text x="401" y="217" class="sub">w2 = -0.2</text>
+  <text x="401" y="267" class="sub">w3 = 0.8</text>
+  <circle cx="665" cy="210" r="72" fill="#fef3c7" stroke="#172033" stroke-width="3" />
+  <text x="615" y="190" class="label" style="font-weight: normal;">100 * 0.4 +</text>
+  <text x="615" y="215" class="label" style="font-weight: normal;">255 * -0.2 +</text>
+  <text x="615" y="240" class="label" style="font-weight: normal;">156 * 0.8 =</text>
+  <text x="635" y="265" class="label">113.8</text>
+  <line class="line" x1="737" y1="210" x2="825" y2="210" />
+  <text x="840" y="217" class="label">output</text>
+  <text x="310" y="355" class="sub">Each weight changes how much its input affects the final value.</text>
+</svg>
