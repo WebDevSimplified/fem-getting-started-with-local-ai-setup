@@ -37,6 +37,8 @@ A3B
 
 In the first example this says the model has 8 experts that are each 7B parameters large. The second example doesn't say how many experts the model has but is says each expert is 3B parameters large.
 
+TODO: Do demo showing MOE with large model that barely fits and also MOE with model that comfortably fits.
+
 ### Why MoE Can Be Faster
 
 MoE models are great for lower-end hardware since they require less computation for each token. This means even if the full model does not fit on your GPU, it may still be able to generate tokens efficiently since the lower parameter count experts can run somewhat efficiently on the CPU.

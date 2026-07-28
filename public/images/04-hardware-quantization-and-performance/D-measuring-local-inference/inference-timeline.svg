@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" role="img"
+  aria-labelledby="title desc">
+  <title id="title">Local inference timeline</title>
+  <desc id="desc">A timeline separates loading, prompt processing, time to first token, and steady
+    token generation.</desc>
+  <style>text{font-family:Arial,sans-serif;fill:#1f2937}.label{font-size:24px;font-weight:700}.small{font-size:19px}.line{stroke:#334155;stroke-width:4}.load{fill:#2563eb}.prompt{fill:#0f766e}.first{fill:#f97316}.generate{fill:#a3e635}</style>
+  <rect width="1000" height="300" fill="#f8fafc" />
+  <text class="label" x="50" y="55">One request has more than one kind of waiting</text>
+  <line class="line" x1="60" y1="190" x2="940" y2="190" />
+  <rect class="load" x="80" y="140" width="160" height="50" />
+  <rect class="prompt" x="240" y="140" width="205" height="50" />
+  <rect class="first" x="445" y="140" width="100" height="50" />
+  <rect class="generate" x="545" y="140" width="350" height="50" />
+  <text class="small" x="160" y="120" text-anchor="middle">load model</text>
+  <text class="small" x="342" y="120" text-anchor="middle">process prompt</text>
+  <text class="small" x="495" y="105" text-anchor="middle">first token</text>
+  <text class="small" x="720" y="120" text-anchor="middle">generate tokens per second</text>
+  <text class="small" x="60" y="235">send prompt</text>
+  <text class="small" x="890" y="235">response</text>
+</svg>
