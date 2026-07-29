@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" role="img"
+  aria-labelledby="title desc">
+  <title id="title">LM Studio remote access through Tailscale</title>
+  <desc id="desc">A laptop and a desktop communicate within a private tailnet. The desktop LM Studio
+    server accepts requests on port 1234, while a public internet path is blocked.</desc>
+  <style>
+    .bg { fill: #f7f8fa; }
+    .tailnet { fill: #edf5ff; stroke: #3158a6; stroke-width: 3; stroke-dasharray: 10 8; }
+    .device { fill: #fff; stroke: #1f2937; stroke-width: 3; }
+    .server { fill: #e7f5ef; stroke: #117a56; stroke-width: 3; }
+    .line { fill: none; stroke: #117a56; stroke-width: 4; marker-end: url(#arrow); }
+    .blocked { fill: none; stroke: #b42318; stroke-width: 4; stroke-dasharray: 10 8; }
+    .label { fill: #18212f; font: 700 23px sans-serif; text-anchor: middle; }
+    .body { fill: #3f4a5a; font: 18px sans-serif; text-anchor: middle; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto"
+      markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#117a56" />
+    </marker>
+  </defs>
+  <rect class="bg" width="960" height="480" rx="12" />
+  <rect class="tailnet" x="65" y="55" width="830" height="320" rx="16" />
+  <text class="label" x="480" y="95">Private Tailscale Network</text>
+  <rect class="device" x="115" y="155" width="240" height="130" rx="8" />
+  <text class="label" x="235" y="202">Client laptop</text>
+  <text class="body" x="235" y="235">VS Code or Pi</text>
+  <text class="body" x="235" y="263">model-host:1234/v1</text>
+  <rect class="device" x="605" y="145" width="240" height="160" rx="8" />
+  <text class="label" x="725" y="188">Model host</text>
+  <rect class="server" x="635" y="210" width="180" height="68" rx="6" />
+  <text class="label" x="725" y="240">LM Studio</text>
+  <text class="body" x="725" y="265">model-host:1234</text>
+  <path class="line" d="M355 220 H565" />
+  <text class="body" x="480" y="202">Encrypted private connection</text>
+  <path class="blocked" d="M480 410 V375" />
+  <path d="M458 391 L502 435 M502 391 L458 435" stroke="#b42318" stroke-width="7" />
+  <text class="label" x="480" y="466" fill="#b42318">Public internet has no route to port 1234</text>
+</svg>
