@@ -25,7 +25,7 @@ Each token maps to a numeric representation. This is why token count matters mor
 
 At its core, an LLM repeats one job: look at the tokens it has so far and predict the next token. If the input is `The capital of France is`, the model might assign a high probability to ` Paris`.
 
-![A prompt moves through an LLM, which assigns probabilities to possible next tokens and selects one before repeating.](/fem-getting-started-with-local-ai-setup/images/01-how-llms-work/B-what-makes-llms-special/next-token-generation.svg)
+![A prompt moves through an LLM, which assigns probabilities to possible next tokens and selects one before repeating.](/fem-getting-started-with-local-ai-setup/images/02-how-llms-work/B-what-makes-llms-special/next-token-generation.svg)
 
 Once the model chooses ` Paris`, that token becomes part of the input for the next prediction. It keeps repeating until it reaches a stop token, a configured output limit, or another stopping condition.
 

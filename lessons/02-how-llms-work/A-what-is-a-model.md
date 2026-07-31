@@ -33,7 +33,7 @@ A neural network is made of small calculations called **nodes**. Nodes are organ
 
 The lines between nodes each have a number associated with them. That number is called a **weight**. A weight controls how much one value affects the next calculation. A model's **parameters** are all of the values it learned which in large models is mostly made up of its weights.
 
-![A closer view of one node combining inputs with learned weights before passing a value forward.](/fem-getting-started-with-local-ai-setup/images/01-how-llms-work/A-what-is-a-model/weighted-node.svg)
+![A closer view of one node combining inputs with learned weights before passing a value forward.](/fem-getting-started-with-local-ai-setup/images/02-how-llms-work/A-what-is-a-model/weighted-node.svg)
 
 Even in this very simple example, changing a weight changes the output. A larger red weight could make the output depend more on the red input. A smaller one could make it depend less. Training is the process of finding useful values for all of those weights.
 

@@ -14,6 +14,7 @@ Local AI can give you:
 - **Privacy**: Your model and data stay on your machine. This is useful for private code, HIPAA, personal documents, or data that your company cannot send outside its own systems. Even if you use a Chinese model your data is never actually sent to China.
 - **Offline access**: You do not need an internet connection to run local models.
 - **Control**: You can choose the model, decide how it runs, adjust its settings, and customize it to your exact needs.
+- **Fine Tune**: You can fine-tune and retrain local models on your own data, improving their performance for your specific use cases (even small models will outperform larger models when tuned properly).
 - **Provider independence**: You are not tied to one provider changing its prices, rate limits, available models, or policies.
 - **Lower usage costs**: A cloud API charges for every request and every token it processes. Once you have the hardware, a local model has no per-request API cost other than the energy required to run the hardware itself.
 
