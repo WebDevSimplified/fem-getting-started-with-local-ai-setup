@@ -11,7 +11,7 @@ You already write functions that do this every day. A function that converts Fah
 
 Imagine we want to make a model that darkens a color by 10%. It receives the red, green, and blue values of a color and returns a slightly darker version of that same color.
 
-![A neural network that receives red, green, and blue inputs and produces darker red, green, and blue outputs.](/fem-getting-started-with-local-ai-setup/images/01-how-llms-work/A-what-is-a-model/rgb-neural-network.svg)
+![A neural network that receives red, green, and blue inputs and produces darker red, green, and blue outputs.](/fem-getting-started-with-local-ai-setup/images/02-how-llms-work/A-what-is-a-model/rgb-neural-network.svg)
 
 For one specific input, we could just write the formula ourselves.
 
