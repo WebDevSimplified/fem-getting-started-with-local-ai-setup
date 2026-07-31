@@ -9,9 +9,11 @@ We will be using LM Studio since it makes downloading and running a model straig
 
 ## Install LM Studio
 
-Go to the [LM Studio download page](https://lmstudio.ai/download) and download the version for your operating system. Once the download finishes, run the installer and follow the prompts. The default options are fine, but be sure to enable the option to view developer settings since we will use those settings to create our local AI setup.
+Go to the [LM Studio download page](https://lmstudio.ai/download) and download the version for your operating system. Once the download finishes, run the installer and follow the prompts. The default options are fine, but be sure to enable the option to view developer settings since we will use those settings to create our local AI setup. If you do not see this option during install, you can enable it in `Settings -> Developer -> Developer Mode`.
 
 When the installation is complete, open LM Studio. You do not need to create an account or change any settings before continuing.
+
+**IMPORTANT:** Do not install Bionic. Make sure to install LM Studio which is the lower level tool for running and hosting local AI models.
 
 ## Download A Model
 
