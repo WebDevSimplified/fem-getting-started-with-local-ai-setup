@@ -11,7 +11,7 @@ Before we dive into some of the negatives of local AI, let's first look at the b
 
 Local AI can give you:
 
-- **Privacy**: Your model and data stay on your machine. This is useful for private code, HIPAA, personal documents, or data that your company cannot send outside its own systems.
+- **Privacy**: Your model and data stay on your machine. This is useful for private code, HIPAA, personal documents, or data that your company cannot send outside its own systems. Even if you use a Chinese model your data is never actually sent to China.
 - **Offline access**: You do not need an internet connection to run local models.
 - **Control**: You can choose the model, decide how it runs, adjust its settings, and customize it to your exact needs.
 - **Provider independence**: You are not tied to one provider changing its prices, rate limits, available models, or policies.
@@ -68,3 +68,5 @@ Someone who understands local models can:
 Imagine your company has 10 developers who each use $1,000 worth of tokens per month (a conservative estimate). That is $10,000 in AI costs each month and a huge chunk of those costs could potentially be saved by routing simpler tasks to local models. Even if only 30% of all tasks were handled locally, that could save $3,000 each month.
 
 It isn't hard to see how as AI prices increase, companies grow, and developers use more tokens that this cost-saving approach could become increasingly valuable over time. Bringing these skills to a company will easily make you a highly valuable team member and more than likely pay for your entire salary in how much money you could save the company each year.
+
+Companies also have the capital to buy much more powerful machines that can run local models that are able to compete with even the best cloud frontier models, meaning you can potentially replace 90-100% of your cloud AI usage with local models which can bump that savings number up to $9,000-$10,000 each month. Within a year that is over $100,000 in potential savings which can purchase a very high end server for your local AI needs.
