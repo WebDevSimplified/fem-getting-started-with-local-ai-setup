@@ -29,17 +29,6 @@ LM Studio is compatible with `MLX` models.
 
 You may also see other formats such as `EXL2`, `AWQ`, `NVFP4`, and `TensorRT`. These formats are often optimized for specific hardware or runtime environments and may not be universally compatible.
 
-## Other Files You May See
-
-Model repositories often include files besides the model weights:
-
-- A tokenizer, which converts text into token IDs
-- A chat template, which formats messages for an instruct model
-- Configuration files that describe the model architecture
-- License files and model-card documentation
-
-When you download a ready-to-run GGUF file through LM Studio, the application handles the details you need for that workflow. When you work directly with a repository or another runtime, you may need to manage more of these pieces yourself.
-
 ## Choosing the Right Runtime
 
 There are many different runtimes for loading your models. Some are optimized for specific hardware, while others are more general-purpose. Choosing the right runtime first will help you determine which model format you need.
@@ -49,10 +38,6 @@ There are many different runtimes for loading your models. Some are optimized fo
 LM Studio is a great starting point for a runtime since it is easy to use, relatively customizable, and has a UI that makes configuring the model straightforward.
 
 We will be using LM Studio throughout this workshop since I find it is the easiest to get started with for most users.
-
-### Other runtimes
-
-There are many different runtimes available, each with its own strengths and hardware compatibility considerations.
 
 ### vLLM
 

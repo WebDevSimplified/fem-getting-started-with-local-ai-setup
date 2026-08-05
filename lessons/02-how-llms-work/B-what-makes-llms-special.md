@@ -51,7 +51,9 @@ The model produces a probability for every possible next token. We need a rule f
 
 For code, JSON, and other precise output, lower variation is usually easier to work with. For brainstorming or creative writing, a little more variation can be useful. There is no magic set of values. The best settings depend on the job you are asking the model to do.
 
-TODO: Show example of this in LM Studio (Use regenerate message to let it retry) `Write a haiku about trees` (use qwen 2.5 1.5B model for this since it is fast and small)
+### Example
+
+We will be using the prompt `Write a haiku about trees` to test what happens when we change each of these parameters.
 
 ### `temperature`
 
