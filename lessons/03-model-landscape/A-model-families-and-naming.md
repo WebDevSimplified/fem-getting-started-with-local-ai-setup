@@ -40,3 +40,5 @@ Not every model is as helpfully named, though. For example, `GLM 5.2` does not i
 Finding the most up to date models is difficult since it changes so fast. I recommend a Google/AI search for the best current local model families and then from there you can find the best model in each of those families for your specific needs.
 
 The best place to find models once you know what you want is [Hugging Face](https://huggingface.co/models) which we will cover in depth in the next lesson.
+
+Another alternative is directly inside LM Studio, where you can browse and download models without leaving the application. They have some staff recommendations and featured models that can help you get started quickly, but Hugging Face is best if you want the most comprehensive selection and up-to-date models.

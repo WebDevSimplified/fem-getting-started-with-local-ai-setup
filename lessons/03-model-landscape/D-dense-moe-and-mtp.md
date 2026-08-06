@@ -45,7 +45,7 @@ MoE models have a few specific benefits compared to dense models.
 
 MoE models are significantly faster than dense models of the same total parameter count since MoE models only use a small portion of the total parameters on each token generation.
 
-### CPU Offload
+#### CPU Offload
 
 This is a bit of an advanced benefit, but if you entire model does not fit into the VRAM of your GPU, you can offload just some layers of the MoE model to the CPU. This will drastically reduce your speed, but it allows you to run larger models than your GPU alone could handle.
 

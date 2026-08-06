@@ -9,7 +9,7 @@ Hugging Face is the main place to find open models, but it can be overwhelming a
 
 Before we start diving into search and filters it is best to look at a model card so we can understand what information we even want to filter by.
 
-[Qwen3.6-35B-A3B Model Page](https://huggingface.co/Qwen/Qwen3.6-35B-A3B)()
+[Qwen3.6-35B-A3B Model Page](https://huggingface.co/Qwen/Qwen3.6-35B-A3B)
 
 The main page of the model will contain a detailed write up by the uploader of the model. This includes all the information about the model's intended use, limitations, capabilities, and any other relevant details that can help you decide if the model is suitable for your needs.
 
@@ -76,11 +76,6 @@ If you aren't sure what model you want I would recommend using the following fil
 - **Apps:** You can set this to LM Studio to only show models that are compatible with LM Studio, but this is not compatible with `Base Only` since base models will not work in LM Studio. Only use this when trying to find quantizations of models.
 - **Libraries:** This lets you filter by the format of the model so you can match it to your specific hardware setup.
 
-- Task, usually `Text Generation` for a chat or coding model.
-- Library or format, such as `GGUF` when I want a model for LM Studio or another `llama.cpp`-based runtime.
-- Number of parameters, when I know the size that will fit on my hardware.
-- Language, if I need strong support for a language other than English.
-
 You can sort results by downloads, likes, recently updated, or trending, but just know that downloads/likes tend to not show great results since it skews towards much older models that were very popular on release. Trending is usually the best sorting option.
 
 ## Check Who Uploaded The Model
@@ -101,6 +96,6 @@ On this new quantized model page there is a list of all the quantized model opti
 
 Now I want you to try downloading a model to use in LM Studio. [LFM2.5-8B-A1B](https://huggingface.co/LiquidAI/LFM2.5-8B-A1B) will be the base model I want you to start from. Remember you need to find a quantized version and download that (Unsloth is a great option for quantized models, but use whatever you want).
 
-When downloading a quantized version, select any of the options in the `4-bit` category or use the `Use this model` dropdown which will default to a `4-bit` option.
+When downloading a quantized version, select any of the options in the `4-bit` category or use the `Use this model` dropdown which will default to quantization that fits best on your system.
 
 **IMPORTANT:** Also, [download this model](lmstudio://open_from_hf?model=unsloth/Qwen3.5-9B-MTP-GGUF&file=Qwen3.5-9B-Q4_K_S.gguf) as we will be using it later.

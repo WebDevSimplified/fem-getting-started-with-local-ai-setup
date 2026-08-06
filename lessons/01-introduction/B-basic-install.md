@@ -41,3 +41,31 @@ Write a JavaScript function that returns the largest number in an array.
 ```
 
 That's all it takes to get setup with your very first local AI model, but there is obviously much more to learn about optimizing performance, choosing the right models, and configuring your local AI environment for agentic coding.
+
+## Navigating LM Studio
+
+LM Studio is relatively simple to navigate as it only has a few sections.
+
+### Chat Screen
+
+The first option in the sidebar is the chat option. Here you can load and chat with any model you have downloaded and you can even tweak certain parameters such as available tools and model parameters.
+
+### Developer Server
+
+The next option in the sidebar is the developer server. Here is where you load models to be served via an API and consumed in your favorite developer tools. This is the most important tab for agentic coding.
+
+### Your Model Viewer
+
+The third option in the sidebar is a model viewer. Here you can view the models you have downloaded and remove any that you no longer need.
+
+### Model Search
+
+The final main option in the sidebar is the model search. Here you can search for new models to download and add to your local collection. This makes it easy to find the latest models without leaving LM Studio, but is not my preferred way to find models.
+
+### LM Link
+
+Here is where you can setup LM Link for remote access to your local AI models. This is something we will cover at the end of the workshop.
+
+### Options
+
+Finally, the options menu lets you configure various settings for LM Studio, such as appearance, default model parameters, and other preferences.
