@@ -24,3 +24,12 @@ In this workshop, you will learn:
 - How to evaluate and improve a local AI setup when it is too slow or does not give you the results you want
 
 By the end of this workshop, you will have a local AI setup running on your machine. More importantly, you will understand why you chose that setup and how to adjust it when your needs change.
+
+## My Setup
+
+During this workshop I will be using 2 different computers:
+
+- **This Laptop:** Not at all optimized for local AI and has extremely limited GPU capabilities.
+- **Remote Desktop Machine:** My main development machine at my house with a Nvidia 5070 Ti GPU. This machine is much more capable for running local AI and is what I will demo all larger models on.
+
+My main machine is not optimized for local AI since I use this machine mostly for video recording/editing which is why I have the GPU I do. You can get away with a much cheaper GPU (that may even be better for larger AI models) if your primary use case is running local AI so don't be discouraged by the high price tag of the GPU I am using.
