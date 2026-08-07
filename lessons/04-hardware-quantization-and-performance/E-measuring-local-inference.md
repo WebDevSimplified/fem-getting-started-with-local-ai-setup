@@ -26,7 +26,7 @@ Try to use a prompt that is both representative of your typical tasks and suffic
 
 To compare performance change one parameter at a time between each run until you dial in the optimal configuration for your hardware. You can then save those settings in LM Studio.
 
-## Know When To Prioritize Quality
+## Know When To Measure Quality
 
 When comparing configuration options, you can safely ignore the quality of the output from the model. The goal of configuring one model is to get it to load and perform efficiently on your hardware.
 

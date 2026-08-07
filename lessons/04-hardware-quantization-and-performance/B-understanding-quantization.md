@@ -9,7 +9,9 @@ Quantization is a confusing sounding word and a topic that overwhelms many peopl
 
 As we already know a model is essentially a bunch of arrays of numbers. Those numbers are usually stored as 32 or 16 bit numbers which provides lots of precision but also takes up a significant amount of memory. These full size models are often labeled as `FP32`, `FP16`, or `BF16`.
 
-Quantization is the process of reducing the number of bits used to store each number in the model's weights. You will often see quantizations referred to as `Q4`, `IQ5`, `Q4_K_M`, `Q8`, etc. The number in these labels indicates the number of bits used per weight, so higher numbers will be more precise, but also much larger.
+Quantization is the process of reducing the number of bits used to store each number in the model's weights. You will often see quantizations referred to as `Q4`, `IQ5`, `Q4_K_M`, `Q8`, etc.
+
+**Important:** The number in these labels indicates the number of bits used per weight, so higher numbers will be more precise, but also take up more memory.
 
 ![One model weight stored at 16-bit precision, then rounded to its closest available 8-bit and 4-bit values.](/fem-getting-started-with-local-ai-setup/images/04-hardware-quantization-and-performance/B-understanding-quantization/quantization-precision.svg)
 
@@ -17,7 +19,7 @@ In general quantization will reduce the size of the model by the difference in t
 
 ## Reading Quantization Labels
 
-Quantization names vary by format and publisher, but there are some common things to look out for when interpreting these labels. Let's use the label `UD-Q4_K_S` as an example.
+Quantization names vary by format and publisher, but there are some common things to look out for when interpreting these labels. Let's use the label `UD-Q4_K_S` as an example. We can also reference the [Qwen3.6-35B-A3B model](https://huggingface.co/Qwen/Qwen3.6-35B-A3B) to see additional quantization examples.
 
 ### `UD`
 

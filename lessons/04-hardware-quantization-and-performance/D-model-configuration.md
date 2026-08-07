@@ -15,6 +15,12 @@ Often there will be different settings recommended for different tasks. For exam
 
 You don't have to use the exact generation settings from the model card, but they are a great starting point that you can fine tune from based on your needs. Generally, I find the recommended settings don't need to be changed.
 
+### Demo: Configure A Downloaded Model
+
+I will show you how to find all these settings using [Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B).
+
+Setting these values can be done from the models tab in LM Studio. Doing it there will set them as the default for your model and will be used every time your model is loaded.
+
 ## Make Note of Output Length
 
 When configuring your model with your agents you may need to specify the maximum output tokens. Many models will give a recommended size for this in the model card and may even suggest multiple values based on the work you are trying to do.
@@ -36,7 +42,3 @@ Explain quantization in one paragraph.
 ```
 
 This will almost always be in the model files and should be automatically loaded by LM Studio. If for some reason your model is not working properly, check to ensure the chat template is set to the expected value for the model.
-
-## Demo: Configure A Downloaded Model
-
-I will show you how to find all these settings using [Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B).
