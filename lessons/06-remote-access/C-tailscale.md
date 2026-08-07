@@ -1,6 +1,6 @@
 ---
 title: "Remote Access With Tailscale"
-description: "Connect a client to an LM Studio server over a private Tailscale network and test the OpenAI-compatible endpoint remotely."
+description: "Connect a client to an LM Studio server over a private Tailscale network."
 ---
 
 Tailscale is a great choice when your client does not support LM Link or when you want more control over the network connectivity between your devices.
@@ -9,7 +9,7 @@ Tailscale is a great choice when your client does not support LM Link or when yo
 
 ## How Tailscale Works
 
-Behind the scenes LM Link is using Tailscale to hook up your remote access, so in order to configure our own Tailscale network we need to know how Tailscale works and what it is doing.
+Behind the scenes LM Link is actually just using Tailscale to hook up your remote access, so in order to configure our own Tailscale network we need to know how Tailscale works and what it is doing.
 
 Tailscale creates a private network (called a tailnet) that connects all your devices securely. Each device gets a stable IP address and hostname within the tailnet, and Tailscale handles the encrypted communication between devices. This allows you to access services on one device from another as if they were on the same local network, without exposing them to the public internet.
 
@@ -27,9 +27,9 @@ The first step is to create a Tailscale account at [https://login.tailscale.com/
 
 Once you have an account, you need to download Tailscale onto the devices you want to connect to one another.
 
-Run the Tailscale app it will either as you to sign into your account or it will direct you to a webpage which asks you to verify you want to add this device to your tailnet. Once verified, the device will be connected to your tailnet, but you need 2 devices to test the connection properly.
+Run the Tailscale app it will either ask you to sign into your account or it will direct you to a webpage which asks you to verify you want to add this device to your tailnet. Once verified, the device will be connected to your tailnet, but you need 2 devices to test the connection properly.
 
-Download Tailscale on another device (such as your phone) and go through the exact same setup steps. Before moving on, make sure your devices can reach reach other through Tailscale. Replace `device-name-or-ip` with the ip or device name in Tailscale for the device you want to connect to.
+Download Tailscale on another device (such as your phone) and go through the exact same setup steps. Before moving on, make sure your devices can reach each other through Tailscale. Replace `device-name-or-ip` with the ip or device name in Tailscale for the device you want to connect to.
 
 ```bash
 ping device-name-or-ip
@@ -53,7 +53,7 @@ If you want you can turn on `Require Authentication` in LM Studio and create an 
 
 ## Connecting To Our Dev Tools
 
-The only things that needs to change in our dev tool connections is we need to replace the `127.0.0.1` or `localhost` address with the Tailscale hostname or IP address of the model host. For example, if your domain name was `kyle-desktop` your URL would go from `http://localhost:1234/v1` to `http://kyle-desktop:1234/v1`.
+The only things that needs to change in our dev tool connections is we need to replace the `127.0.0.1` or `localhost` address with the Tailscale hostname or IP address of the model host. For example, if your domain name was `host-desktop` your URL would go from `http://localhost:1234/v1` to `http://host-desktop:1234/v1`.
 
 You can test the connection by doing a simple curl from the client. The below command should return a list of models.
 
@@ -82,3 +82,4 @@ If you haven't already, try setting up Tailscale between your phone/other device
 3. Load a model on the host and change your LM Studio server to `Serve on Local Network`.
 4. On the client, configure your dev tools to use the Tailscale hostname or IP address of the model host.
 5. Send the host model a short prompt from your client dev tools.
+6. Optionally configure security for multi user situations and test that the only port you can access is the one you configured.

@@ -1,9 +1,9 @@
 ---
 title: "Connecting Pi"
-description: "Configure Pi to use an LM Studio model through a local OpenAI-compatible provider."
+description: "Configure Pi to use LM Studio models."
 ---
 
-Pi is a minimal terminal based agent harness. I personally find Pi to be great for local AI since it is the most minimal agent harness and thus has very low overhead.
+[Pi](https://pi.dev/) is a minimal terminal based agent harness. I personally find Pi to be great for local AI since it is the most minimal agent harness and thus has very low overhead.
 
 ## Add The Provider
 
@@ -12,8 +12,8 @@ Pi reads custom providers from `~/.pi/agent/models.json`. Create that file if it
 ```json
 {
   "providers": {
+    // Custom name of the provider
     "lmstudio": {
-      // Custom name of the provider
       "baseUrl": "http://127.0.0.1:1234/v1", // Your LM Studio server URL (with /v1) appended
       "api": "openai-completions", // Use either openai-completions or openai-responses
       "apiKey": "key", // Your api key or any non-empty string if auth is disabled

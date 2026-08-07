@@ -19,7 +19,7 @@ The last one matters more than it may seem. You can run a quite powerful model e
 
 ### Find Your Hardware Details
 
-Depeding on your operating system you will find your hardware specifications in different places.
+Depending on your operating system you will find your hardware specifications in different places.
 
 #### Windows
 
@@ -35,7 +35,7 @@ On Linux, you can use the `top` or `htop` commands in the terminal to view your 
 
 ## How to Find Models That Fit Your Hardware
 
-Once you have your hardware details, you can input that data into [Hugging Face](https://huggingface.co) to find models that make sense for your machine. Hugging Face is where model publishers document the available files, formats, sizes, and quantizations for a model.
+Once you have your hardware details, you can input that data into [Hugging Face](https://huggingface.co) to find models that make sense for your machine.
 
 [Set Your Hardware Details in Hugging Face](https://huggingface.co/settings/hardware)
 
@@ -48,3 +48,11 @@ You can also specify which runtimes you use most often to fine tune the list of 
 Now that you have this information it is much easier to find models that will specifically fit your hardware. You can even filter to only show models that fit within your hardware constraints or runtime.
 
 In the next lesson, we will look at quantization, which will help us run large models on limited hardware.
+
+### Quantizations
+
+Once you have your hardware information on Hugging Face, it will show you which quantization files are most likely to fit within your hardware. This is a great way to see at a glance what models work best for your system.
+
+### Try It Yourself
+
+Go ahead and add your hardware details to Hugging Face and spend a bit of time using that data to filter models and view which quantizations work for your system.

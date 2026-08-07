@@ -3,7 +3,7 @@ title: "VS Code And Agent Mode"
 description: "Connect VS Code to LM Studio in both Agent mode and regular chat mode."
 ---
 
-VS Code is one of the easiest IDEs to setup with local models since you can download an extension to do it automatically for you or just manually set it up yourself. Both options are very easy.
+[VS Code](https://code.visualstudio.com/) is one of the easiest IDEs to setup with local models since you can download an extension to do it automatically for you or just manually set it up yourself. Both options are very easy.
 
 ## Using an Extension
 
@@ -62,7 +62,7 @@ All you need to do is fill in the appropriate information based on your LM Studi
       "vision": true,
       "thinking": true, // I added `thinking: true` since this is a reasoning model
       "maxInputTokens": 222144, // This should be `totalContext - maxOutputTokens`
-      "maxOutputTokens": 40000 // Set this based on recommendations from the model card
+      "maxOutputTokens": 32768 // Set this based on recommendations from the model card
     }
   ]
 }
@@ -84,7 +84,7 @@ You can also use the responses API if you want instead. I would experiment with 
       "vision": true,
       "thinking": true,
       "maxInputTokens": 222144,
-      "maxOutputTokens": 40000
+      "maxOutputTokens": 32768
     }
   ]
 }
@@ -98,4 +98,4 @@ If you change the `apiType` and the `url` you can now use that model with the re
 
 If you haven't already try connecting one of your models from LM Studio to VSCode. Try both chat completions and responses API to see which works best for your use case.
 
-You may notice slow initial load times when making your first request. This may be caused by having too many tools enabled (since all tool information is sent with the first request) or because the system prompt from GitHub is quite long which needs to be read in its entirety on the first prompt.
+You may notice slow initial load times when making your first request. This may be caused by having too many tools enabled (since all tool information is sent with the first request) or because the system prompt from VSCode is quite long which needs to be read in its entirety on the first prompt.

@@ -9,9 +9,9 @@ Every developer tool uses a different UI and config-file format, but the connect
 
 To setup a connection to LM Studio you only need the following information.
 
-1. **The server URL** - This is the address where your LM Studio server is running, typically `http://127.0.0.1:1234/v1`.
+1. **The server URL** - This is the address where your LM Studio server is running, typically `http://127.0.0.1:1234`.
 2. **The API endpoint** - The specific endpoint you will be interacting with, usually `/v1/chat/completions` or `/v1/responses`.
-3. **The API key** - The token or placeholder used for authentication with the LM Studio server, if required. Otherwise you can just use any string as a placeholder.
+3. **The API key** - If you set an API key use that, otherwise this can be left blank or filled with any string value if the tool you are configuring requires an API key.
 4. **The model ID** - The identifier of the model you have loaded in LM Studio that you want the developer tool to use. This can be copied using the copy button next to the model when it is loaded.
 5. **The context window** - The maximum number of tokens the model can handle in a single request. Sometimes this is separated between input and output token limits.
 6. **Model capabilities** - Any specific capabilities or features of the model that the developer tool should be aware of, such as support for tool calling, reasoning, or vision.
@@ -33,7 +33,7 @@ You then need to add the above information into the configuration file for the d
   "models": [
     {
       "id": "qwen/qwen3.6-35b-a3b",
-      "name": "qwen/qwen3.6-35b-a3b",
+      "name": "Qwen 3.5 MoE",
       "toolCalling": true,
       "vision": true,
       "thinking": true,

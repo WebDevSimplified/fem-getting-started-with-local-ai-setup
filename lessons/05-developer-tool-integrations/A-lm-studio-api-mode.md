@@ -30,11 +30,11 @@ Loading models in the server is as simple as clicking the Load Model button and 
 You have a few options for configuring the local server:
 
 - **Server Port:** Change the port if `1234` is already in use or if you want to run on a different port.
-- **Require Authentication:** Setup API key access. We will go into more detail in the authentication section.
-- **Server on Local Network:** By default, the server binds to `localhost`. You can enable `Serve on Local Network` if you want to access your server remotely. We will cover this in depth in a later section.
-- **Allow Per-Request MCPs:** Enabling this option allows your models to access MCP servers not specified in LM Studio. I would recommend leaving this on
+- **Require Authentication:** Setup API key access. Only really useful if you plan to expose your server to others or run it on a network where security is a concern.
+- **Server on Local Network:** By default, the server binds to `localhost`. You can enable `Serve on Local Network` if you want to access your server remotely. We will cover this in depth in the next module.
+- **Allow Per-Request MCPs:** Enabling this option allows your models to access MCP servers not specified in LM Studio. I would recommend leaving this on.
 - **Allow Calling Servers from mcp.json:** This option lets models run any MCP server in your LM Studio mcp.json file. I recommend leaving this off as it is best to just provide MCP access explicitly through your dev tools.
-- **Enable CORS:** This just allows cross origin request. I would recommend leaving this off unless you specifically need it for development purposes.
+- **Enable CORS:** This just allows cross origin requests. I would recommend leaving this off unless you specifically need it for development purposes.
 - **Just In Time Model Loading:** Enabling this option allows models to automatically be loaded when they are requested, which means you don't need to preload your models manually. I always leave this on.
 - **Auto Unload Unused JIT Loaded Models:** This option will just unload any model that was automatically loaded if it hasn't been used within the idle timeout window. I always leave this on.
 - **Only Keep Last JIT Model:** This option will ensure only one model can be JIT loaded at a time so it will unload any previously JIT loaded model. I recommend leaving this on since it will conserve your memory if you switch models often.
@@ -62,9 +62,9 @@ Each API type has its own set of endpoints and expected request/response formats
 The OpenAI-compatible API also has multiple endpoints.
 
 - **/v1/models:** Lists all available models.
-- **/v1/responses:** A newer endpoint for handling interactions that manage some of the state on the server side, reducing to pass the entire conversation history each time.
+- **/v1/responses:** A newer endpoint for handling interactions that manage some of the state on the server side, reducing the need to pass the entire conversation history each time.
 - **/v1/chat/completions:** The standard chat style interaction endpoint, used for generating conversational responses.
 - **/v1/completions:** Predict the next token given a prompt. This is considered deprecated.
 - **/v1/embeddings:** Used specifically for creating embeddings for RAG (Retrieval-Augmented Generation) workflows.
 
-In 99% of cases, you will be interacting with the OpenAI-compatible API using the `/v1/chat/completions` endpoint or the `/v1/responses` endpoint. Most providers only support `/v1/chat/completions`, but some may support both `/v1/chat/completions` and `/v1/responses`.
+In 99% of cases, you will be interacting with the OpenAI-compatible API using the `/v1/chat/completions` endpoint or the `/v1/responses` endpoint. Nearly all providers support `/v1/chat/completions`, but some may support both `/v1/chat/completions` and `/v1/responses`.
