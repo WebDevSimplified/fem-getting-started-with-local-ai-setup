@@ -33,3 +33,15 @@ During this workshop I will be using 2 different computers:
 - **Remote Desktop Machine:** My main development machine at my house with a Nvidia 5070 Ti GPU. This machine is much more capable for running local AI and is what I will demo all larger models on.
 
 My main machine is not optimized for local AI since I use this machine mostly for video recording/editing which is why I have the GPU I do. You can get away with a much cheaper GPU (that may even be better for larger AI models) if your primary use case is running local AI so don't be discouraged by the high price tag of the GPU I am using.
+
+## Sneak Peek
+
+Now I want to give you a quick sneak peek at what you will be able to accomplish by the end of this workshop. A 100% private, local AI workflow running on your own hardware that you can access remotely from any device no matter where you are.
+
+I will prompt my remote machine from this laptop and everything will work just like if you were running a cloud model.
+
+Let's just use this simple prompt for testing.
+
+```
+Create an HTML page that says "Welcome to my AI workshop"
+```
