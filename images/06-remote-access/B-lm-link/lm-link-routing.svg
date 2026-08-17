@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" role="img"
+  aria-labelledby="title desc">
+  <title id="title">LM Link routes local API requests to a remote model</title>
+  <desc id="desc">A coding tool on a laptop calls the local LM Studio server. LM Link securely
+    routes the request to LM Studio on a desktop, which serves a loaded model.</desc>
+  <style>
+    .bg { fill: #f7f8fa; }
+    .device { fill: #fff; stroke: #1f2937; stroke-width: 3; }
+    .service { fill: #eef3ff; stroke: #3158a6; stroke-width: 3; }
+    .model { fill: #e7f5ef; stroke: #117a56; stroke-width: 3; }
+    .line { fill: none; stroke: #3158a6; stroke-width: 4; marker-end: url(#arrow); }
+    .secure { fill: none; stroke: #117a56; stroke-width: 4; stroke-dasharray: 10 8; marker-end: url(#arrow-green); }
+    .label { fill: #18212f; font: 700 22px sans-serif; text-anchor: middle; }
+    .body { fill: #3f4a5a; font: 17px sans-serif; text-anchor: middle; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="4" refY="4" orient="auto"
+      markerUnits="userSpaceOnUse">
+      <path d="M0,0 L0,8 L9,4 z" fill="#3158a6" />
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"
+      markerUnits="userSpaceOnUse">
+      <path d="M0,0 L0,9 L9,4 z" fill="#117a56" />
+    </marker>
+  </defs>
+  <rect class="bg" width="960" height="480" rx="12" />
+  <rect class="device" x="65" y="80" width="340" height="300" rx="14" />
+  <text class="label" x="235" y="120">Client laptop</text>
+  <rect class="service" x="90" y="165" width="145" height="105" rx="8" />
+  <text class="label" x="162" y="205">Coding tool</text>
+  <text class="body" x="162" y="235">VS Code or Pi</text>
+  <rect class="service" x="260" y="165" width="120" height="105" rx="8" />
+  <text class="label" x="320" y="205">LM Studio</text>
+  <text class="body" x="320" y="235">localhost:1234</text>
+  <path class="line" d="M238 218 H255" />
+  <rect class="device" x="535" y="80" width="360" height="300" rx="14" />
+  <text class="label" x="715" y="120">Model host</text>
+  <rect class="service" x="555" y="165" width="135" height="105" rx="8" />
+  <text class="label" x="622" y="205" style="font-size: 19px">LM Studio</text>
+  <text class="body" x="622" y="235" style="font-size: 15px">host server</text>
+  <rect class="model" x="710" y="165" width="165" height="105" rx="8" />
+  <text class="label" x="792" y="205">Loaded model</text>
+  <text class="body" x="792" y="230">GPU and memory</text>
+  <text class="body" x="792" y="250">live here</text>
+  <path class="secure" d="M386 218 H547" />
+  <path class="line" d="M690 218 H700" />
+  <text class="body" x="470" y="168" style="font-size: 14px">LM Link encrypted</text>
+  <text class="body" x="470" y="186" style="font-size: 14px">routing</text>
+  <text class="body" x="480" y="430">Your integration remains pointed at localhost on the client.</text>
+</svg>

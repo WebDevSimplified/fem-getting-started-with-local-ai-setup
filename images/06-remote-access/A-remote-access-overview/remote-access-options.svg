@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" role="img" aria-labelledby="title desc">
+  <title id="title">Choosing a private remote access option</title>
+  <desc id="desc">A decision diagram that selects LM Link when both devices run LM Studio and Tailscale when any OpenAI-compatible client needs direct access.</desc>
+  <style>
+    .bg { fill: #f7f8fa; }
+    .box { fill: #ffffff; stroke: #1f2937; stroke-width: 3; }
+    .choice { fill: #e7f5ef; stroke: #117a56; stroke-width: 3; }
+    .manual { fill: #eef3ff; stroke: #3158a6; stroke-width: 3; }
+    .line { fill: none; stroke: #1f2937; stroke-width: 3; marker-end: url(#arrow); }
+    .label { fill: #18212f; font: 600 24px sans-serif; text-anchor: middle; }
+    .body { fill: #3f4a5a; font: 18px sans-serif; text-anchor: middle; }
+    .tag { fill: #18212f; font: 700 18px sans-serif; text-anchor: middle; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#1f2937"/></marker>
+  </defs>
+  <rect class="bg" width="960" height="440" rx="12"/>
+  <rect class="box" x="300" y="35" width="360" height="88" rx="8"/>
+  <text class="label" x="480" y="72">Need remote model access?</text>
+  <text class="body" x="480" y="102">Start with a private connection</text>
+  <path class="line" d="M480 123 V185 H255 V220"/>
+  <path class="line" d="M480 123 V185 H705 V220"/>
+  <text class="tag" x="315" y="172">Both devices run LM Studio</text>
+  <text class="tag" x="670" y="172">Any compatible client needs access</text>
+  <rect class="choice" x="80" y="220" width="350" height="145" rx="8"/>
+  <text class="label" x="255" y="264">Use LM Link</text>
+  <text class="body" x="255" y="296">Keep tools on localhost</text>
+  <text class="body" x="255" y="326">Let LM Studio route the model</text>
+  <rect class="manual" x="530" y="220" width="350" height="145" rx="8"/>
+  <text class="label" x="705" y="264">Use Tailscale</text>
+  <text class="body" x="705" y="296">Reach the host by private hostname</text>
+  <text class="body" x="705" y="326">Use an API token and access rule</text>
+  <text class="body" x="480" y="408">Neither option requires public port forwarding.</text>
+</svg>

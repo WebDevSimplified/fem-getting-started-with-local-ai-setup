@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480" role="img"
+  aria-labelledby="title description">
+  <title id="title">RGB neural network</title>
+  <desc id="description">Red, green, and blue inputs connect through two hidden layers to darker RGB
+    outputs. The connections between nodes are learned weights.</desc>
+  <style>
+    text { font-family: Arial, sans-serif; fill: #172033; }
+    .label { font-size: 22px; font-weight: 700; }
+    .sub { font-size: 17px; fill: #526071; }
+    .line { stroke: #9aa8bb; stroke-width: 3; }
+    .node { stroke: #172033; stroke-width: 3; }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#9aa8bb" />
+    </marker>
+  </defs>
+  <rect width="1200" height="450" fill="#f6f8fb" />
+  <text x="90" y="58" class="label">Input Nodes</text>
+  <text x="340" y="58" class="label">Hidden Layer 1</text>
+  <text x="640" y="58" class="label">Hidden Layer 2</text>
+  <text x="965" y="58" class="label">Output Nodes</text>
+  <line class="line" x1="180" y1="130" x2="380" y2="110" />
+  <line class="line" x1="180" y1="130" x2="380" y2="195" />
+  <line class="line" x1="180" y1="130" x2="380" y2="285" />
+  <line class="line" x1="180" y1="130" x2="380" y2="370" />
+  <line class="line" x1="180" y1="240" x2="380" y2="110" />
+  <line class="line" x1="180" y1="240" x2="380" y2="195" />
+  <line class="line" x1="180" y1="240" x2="380" y2="285" />
+  <line class="line" x1="180" y1="240" x2="380" y2="370" />
+  <line class="line" x1="180" y1="350" x2="380" y2="110" />
+  <line class="line" x1="180" y1="350" x2="380" y2="195" />
+  <line class="line" x1="180" y1="350" x2="380" y2="285" />
+  <line class="line" x1="180" y1="350" x2="380" y2="370" />
+  <line class="line" x1="440" y1="110" x2="685" y2="110" />
+  <line class="line" x1="440" y1="110" x2="685" y2="195" />
+  <line class="line" x1="440" y1="110" x2="685" y2="285" />
+  <line class="line" x1="440" y1="110" x2="685" y2="370" />
+  <line class="line" x1="440" y1="195" x2="685" y2="110" />
+  <line class="line" x1="440" y1="195" x2="685" y2="195" />
+  <line class="line" x1="440" y1="195" x2="685" y2="285" />
+  <line class="line" x1="440" y1="195" x2="685" y2="370" />
+  <line class="line" x1="440" y1="285" x2="685" y2="110" />
+  <line class="line" x1="440" y1="285" x2="685" y2="195" />
+  <line class="line" x1="440" y1="285" x2="685" y2="285" />
+  <line class="line" x1="440" y1="285" x2="685" y2="370" />
+  <line class="line" x1="440" y1="370" x2="685" y2="110" />
+  <line class="line" x1="440" y1="370" x2="685" y2="195" />
+  <line class="line" x1="440" y1="370" x2="685" y2="285" />
+  <line class="line" x1="440" y1="370" x2="685" y2="370" />
+  <line class="line" x1="745" y1="110" x2="1000" y2="130" />
+  <line class="line" x1="745" y1="110" x2="1000" y2="240" />
+  <line class="line" x1="745" y1="110" x2="1000" y2="350" />
+  <line class="line" x1="745" y1="195" x2="1000" y2="130" />
+  <line class="line" x1="745" y1="195" x2="1000" y2="240" />
+  <line class="line" x1="745" y1="195" x2="1000" y2="350" />
+  <line class="line" x1="745" y1="285" x2="1000" y2="130" />
+  <line class="line" x1="745" y1="285" x2="1000" y2="240" />
+  <line class="line" x1="745" y1="285" x2="1000" y2="350" />
+  <line class="line" x1="745" y1="370" x2="1000" y2="130" />
+  <line class="line" x1="745" y1="370" x2="1000" y2="240" />
+  <line class="line" x1="745" y1="370" x2="1000" y2="350" />
+  <circle class="node" cx="150" cy="130" r="30" fill="#ef4444" />
+  <circle class="node" cx="150" cy="240" r="30" fill="#22c55e" />
+  <circle class="node" cx="150" cy="350" r="30" fill="#3b82f6" />
+  <circle class="node" cx="410" cy="110" r="30" fill="#dbe4ee" />
+  <circle class="node" cx="410" cy="195" r="30" fill="#dbe4ee" />
+  <circle class="node" cx="410" cy="285" r="30" fill="#dbe4ee" />
+  <circle class="node" cx="410" cy="370" r="30" fill="#dbe4ee" />
+  <circle class="node" cx="715" cy="110" r="30" fill="#dbe4ee" />
+  <circle class="node" cx="715" cy="195" r="30" fill="#dbe4ee" />
+  <circle class="node" cx="715" cy="285" r="30" fill="#dbe4ee" />
+  <circle class="node" cx="715" cy="370" r="30" fill="#dbe4ee" />
+  <circle class="node" cx="1030" cy="130" r="30" fill="#b91c1c" />
+  <circle class="node" cx="1030" cy="240" r="30" fill="#15803d" />
+  <circle class="node" cx="1030" cy="350" r="30" fill="#1d4ed8" />
+  <text x="58" y="138" class="sub">Red</text>
+  <text x="43" y="248" class="sub">Green</text>
+  <text x="50" y="358" class="sub">Blue</text>
+  <text x="175" y="425" class="sub">Weights</text>
+  <line class="line" x1="250" y1="418" x2="300" y2="370" marker-end="url(#arrowhead)" />
+  <text x="1070" y="138" class="sub">Red</text>
+  <text x="1070" y="248" class="sub">Green</text>
+  <text x="1070" y="358" class="sub">Blue</text>
+</svg>
